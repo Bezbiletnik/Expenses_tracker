@@ -86,7 +86,6 @@ class UIFunctions(MainWindow):
         UIFunctions.load_data(self)
 
     def graph_plot(self):
-        # self.ui.canvas.clear()
         df = pd.read_sql_table('expenses', engine)
         results = df.groupby(['categories']).sum()
         ax = self.ui.canvas.figure.subplots()
