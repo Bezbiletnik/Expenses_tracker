@@ -124,7 +124,13 @@
 border: 0px solid;</string>
             </property>
             <property name="text">
-             <string>Toggle</string>
+             <string/>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -239,6 +245,11 @@ border: 0px solid;</string>
                  <height>40</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
 	color: rgb(225, 225, 225);
@@ -250,7 +261,13 @@ QPushButton:hover {
 }</string>
                </property>
                <property name="text">
-                <string>Transaction</string>
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -262,6 +279,11 @@ QPushButton:hover {
                  <height>40</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
 	color: rgb(225, 225, 225);
@@ -273,7 +295,13 @@ QPushButton:hover {
 }</string>
                </property>
                <property name="text">
-                <string>Statistic</string>
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -285,6 +313,11 @@ QPushButton:hover {
                  <height>40</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
 	color: rgb(225, 225, 225);
@@ -296,7 +329,13 @@ QPushButton:hover {
 }</string>
                </property>
                <property name="text">
-                <string>Wallet</string>
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -382,6 +421,8 @@ QPushButton:hover {
                       <property name="font">
                        <font>
                         <pointsize>15</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -421,6 +462,9 @@ QPushButton:hover {
                       </property>
                       <attribute name="horizontalHeaderDefaultSectionSize">
                        <number>230</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
                       </attribute>
                       <column>
                        <property name="text">
@@ -502,6 +546,12 @@ QPushButton:hover {
                       <property name="font">
                        <font>
                         <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <italic>false</italic>
+                        <bold>true</bold>
+                        <underline>false</underline>
+                        <strikeout>false</strikeout>
+                        <kerning>true</kerning>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -544,6 +594,8 @@ QPushButton:hover {
                       <property name="font">
                        <font>
                         <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -580,6 +632,8 @@ QPushButton:hover {
                       <property name="font">
                        <font>
                         <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -595,6 +649,8 @@ QPushButton:hover {
                       <property name="font">
                        <font>
                         <pointsize>10</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_main(2)elxoKO.ui'
+## Form generated from reading UI file 'ui_mainMftdKP.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -61,6 +61,7 @@ class Ui_MainWindow(object):
         self.Btn_Toggle.setSizePolicy(sizePolicy)
         self.Btn_Toggle.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "border: 0px solid;")
+        self.Btn_Toggle.setIconSize(QSize(32, 32))
 
         self.verticalLayout_2.addWidget(self.Btn_Toggle)
 
@@ -107,6 +108,9 @@ class Ui_MainWindow(object):
         self.Btn_page_1 = QPushButton(self.frame_top_menus)
         self.Btn_page_1.setObjectName(u"Btn_page_1")
         self.Btn_page_1.setMinimumSize(QSize(0, 40))
+        font = QFont()
+        font.setPointSize(10)
+        self.Btn_page_1.setFont(font)
         self.Btn_page_1.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(225, 225, 225);\n"
 "	background-color: rgb(35, 35, 35);\n"
@@ -115,12 +119,14 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "	background-color: rgb(85, 170, 255);\n"
 "}")
+        self.Btn_page_1.setIconSize(QSize(32, 32))
 
         self.verticalLayout_4.addWidget(self.Btn_page_1)
 
         self.Btn_page_2 = QPushButton(self.frame_top_menus)
         self.Btn_page_2.setObjectName(u"Btn_page_2")
         self.Btn_page_2.setMinimumSize(QSize(0, 40))
+        self.Btn_page_2.setFont(font)
         self.Btn_page_2.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(225, 225, 225);\n"
 "	background-color: rgb(35, 35, 35);\n"
@@ -129,12 +135,14 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "	background-color: rgb(85, 170, 255);\n"
 "}")
+        self.Btn_page_2.setIconSize(QSize(32, 32))
 
         self.verticalLayout_4.addWidget(self.Btn_page_2)
 
         self.Btn_page_3 = QPushButton(self.frame_top_menus)
         self.Btn_page_3.setObjectName(u"Btn_page_3")
         self.Btn_page_3.setMinimumSize(QSize(0, 40))
+        self.Btn_page_3.setFont(font)
         self.Btn_page_3.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(225, 225, 225);\n"
 "	background-color: rgb(35, 35, 35);\n"
@@ -143,6 +151,7 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "	background-color: rgb(85, 170, 255);\n"
 "}")
+        self.Btn_page_3.setIconSize(QSize(32, 32))
 
         self.verticalLayout_4.addWidget(self.Btn_page_3)
 
@@ -180,9 +189,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.btn_upload = QPushButton(self.choice_frame)
         self.btn_upload.setObjectName(u"btn_upload")
-        font = QFont()
-        font.setPointSize(15)
-        self.btn_upload.setFont(font)
+        font1 = QFont()
+        font1.setPointSize(15)
+        self.btn_upload.setFont(font1)
         self.btn_upload.setStyleSheet(u"QPushButton {\n"
 "	\n"
 "	color: rgb(255, 255, 255);\n"
@@ -196,7 +205,11 @@ class Ui_MainWindow(object):
 
         self.btn_remove = QPushButton(self.choice_frame)
         self.btn_remove.setObjectName(u"btn_remove")
-        self.btn_remove.setFont(font)
+        font2 = QFont()
+        font2.setPointSize(15)
+        font2.setBold(False)
+        font2.setWeight(50)
+        self.btn_remove.setFont(font2)
         self.btn_remove.setStyleSheet(u"QPushButton {\n"
 "	\n"
 "	color: rgb(255, 255, 255);\n"
@@ -220,22 +233,21 @@ class Ui_MainWindow(object):
         self.expanses_table = QTableWidget(self.table_frame)
         if (self.expanses_table.columnCount() < 3):
             self.expanses_table.setColumnCount(3)
-        font1 = QFont()
-        font1.setPointSize(10)
         __qtablewidgetitem = QTableWidgetItem()
-        __qtablewidgetitem.setFont(font1);
+        __qtablewidgetitem.setFont(font);
         __qtablewidgetitem.setBackground(QColor(85, 170, 255));
         self.expanses_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        __qtablewidgetitem1.setFont(font1);
+        __qtablewidgetitem1.setFont(font);
         self.expanses_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        __qtablewidgetitem2.setFont(font1);
+        __qtablewidgetitem2.setFont(font);
         self.expanses_table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.expanses_table.setObjectName(u"expanses_table")
         self.expanses_table.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.expanses_table.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.expanses_table.horizontalHeader().setDefaultSectionSize(230)
+        self.expanses_table.horizontalHeader().setProperty("showSortIndicator", False)
 
         self.verticalLayout_10.addWidget(self.expanses_table)
 
@@ -261,14 +273,22 @@ class Ui_MainWindow(object):
         self.date_label = QLabel(self.main_frame)
         self.date_label.setObjectName(u"date_label")
         self.date_label.setMaximumSize(QSize(16777215, 40))
-        self.date_label.setFont(font1)
+        font3 = QFont()
+        font3.setPointSize(10)
+        font3.setBold(True)
+        font3.setItalic(False)
+        font3.setUnderline(False)
+        font3.setWeight(75)
+        font3.setStrikeOut(False)
+        font3.setKerning(True)
+        self.date_label.setFont(font3)
         self.date_label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.date_label)
 
         self.date_time_edit = QDateTimeEdit(self.main_frame)
         self.date_time_edit.setObjectName(u"date_time_edit")
-        self.date_time_edit.setFont(font1)
+        self.date_time_edit.setFont(font)
         self.date_time_edit.setAutoFillBackground(False)
         self.date_time_edit.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.date_time_edit.setCalendarPopup(True)
@@ -278,14 +298,18 @@ class Ui_MainWindow(object):
         self.amount_label = QLabel(self.main_frame)
         self.amount_label.setObjectName(u"amount_label")
         self.amount_label.setMaximumSize(QSize(16777215, 16777215))
-        self.amount_label.setFont(font1)
+        font4 = QFont()
+        font4.setPointSize(10)
+        font4.setBold(True)
+        font4.setWeight(75)
+        self.amount_label.setFont(font4)
         self.amount_label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.amount_label)
 
         self.amount_edit = QLineEdit(self.main_frame)
         self.amount_edit.setObjectName(u"amount_edit")
-        self.amount_edit.setFont(font1)
+        self.amount_edit.setFont(font)
         self.amount_edit.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.amount_edit)
@@ -293,7 +317,7 @@ class Ui_MainWindow(object):
         self.category_label = QLabel(self.main_frame)
         self.category_label.setObjectName(u"category_label")
         self.category_label.setMaximumSize(QSize(16777215, 16777215))
-        self.category_label.setFont(font1)
+        self.category_label.setFont(font4)
         self.category_label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.category_label)
@@ -305,14 +329,18 @@ class Ui_MainWindow(object):
         self.category_box.addItem("")
         self.category_box.addItem("")
         self.category_box.setObjectName(u"category_box")
-        self.category_box.setFont(font1)
+        font5 = QFont()
+        font5.setPointSize(10)
+        font5.setBold(False)
+        font5.setWeight(50)
+        self.category_box.setFont(font5)
         self.category_box.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.category_box)
 
         self.btn_save = QPushButton(self.main_frame)
         self.btn_save.setObjectName(u"btn_save")
-        self.btn_save.setFont(font)
+        self.btn_save.setFont(font1)
         self.btn_save.setStyleSheet(u"QPushButton {\n"
 "	\n"
 "	color: rgb(255, 255, 255);\n"
@@ -373,10 +401,10 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.Btn_Toggle.setText(QCoreApplication.translate("MainWindow", u"Toggle", None))
-        self.Btn_page_1.setText(QCoreApplication.translate("MainWindow", u"Transaction", None))
-        self.Btn_page_2.setText(QCoreApplication.translate("MainWindow", u"Statistic", None))
-        self.Btn_page_3.setText(QCoreApplication.translate("MainWindow", u"Wallet", None))
+        self.Btn_Toggle.setText("")
+        self.Btn_page_1.setText("")
+        self.Btn_page_2.setText("")
+        self.Btn_page_3.setText("")
         self.btn_upload.setText(QCoreApplication.translate("MainWindow", u"UPLOAD", None))
         self.btn_remove.setText(QCoreApplication.translate("MainWindow", u"REMOVE", None))
         ___qtablewidgetitem = self.expanses_table.horizontalHeaderItem(0)

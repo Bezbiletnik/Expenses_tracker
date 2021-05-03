@@ -2,7 +2,6 @@ import sqlalchemy
 import matplotlib
 import sqlite3
 import pandas as pd
-import numpy as np
 from main import *
 import matplotlib.pyplot as plt
 matplotlib.use('Qt5Agg')
@@ -22,8 +21,14 @@ class UIFunctions(MainWindow):
             # SET MAX WIDTH
             if width == 70:
                 width_extended = max_extend
+                self.ui.Btn_page_1.setText('   Transaction')
+                self.ui.Btn_page_2.setText('   Statistic')
+                self.ui.Btn_page_3.setText('   Wallet')
             else:
                 width_extended = standard
+                self.ui.Btn_page_1.setText(None)
+                self.ui.Btn_page_2.setText(None)
+                self.ui.Btn_page_3.setText(None)
 
             # ANIMATION
             self.animation = QPropertyAnimation(self.ui.frame_left_menu, b'minimumWidth')
@@ -78,10 +83,14 @@ class UIFunctions(MainWindow):
         cur.close()
         connection.commit()
         connection.close()
+        UIFunctions.load_data(self)
 
     def graph_plot(self):
+        # self.ui.canvas.clear()
         df = pd.read_sql_table('expenses', engine)
         results = df.groupby(['categories']).sum()
         ax = self.ui.canvas.figure.subplots()
-        ax.pie(x=results.values.flatten(), labels=results.axes[0])
+        ax.pie(x=results.values.flatten(), labels=None, startangle=-40)
+        ax.set_title('Pie chart of expenses')
+        ax.legend(loc='best', bbox_to_anchor=(0.5, -0.05), shadow=True, ncol=5, labels=results.axes[0])
         self.ui.canvas.draw()
