@@ -395,28 +395,6 @@ QPushButton:hover {
                    </property>
                    <layout class="QHBoxLayout" name="horizontalLayout_4">
                     <item>
-                     <widget class="QPushButton" name="btn_upload">
-                      <property name="font">
-                       <font>
-                        <pointsize>15</pointsize>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">QPushButton {
-	
-	color: rgb(255, 255, 255);
-}
-QPushButton:hover {
-	
-	background-color: rgb(85, 170, 255);
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>UPLOAD</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
                      <widget class="QPushButton" name="btn_remove">
                       <property name="font">
                        <font>

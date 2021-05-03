@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_mainMftdKP.ui'
+## Form generated from reading UI file 'ui_mainCpufCy.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -187,29 +187,13 @@ class Ui_MainWindow(object):
         self.choice_frame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_4 = QHBoxLayout(self.choice_frame)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.btn_upload = QPushButton(self.choice_frame)
-        self.btn_upload.setObjectName(u"btn_upload")
-        font1 = QFont()
-        font1.setPointSize(15)
-        self.btn_upload.setFont(font1)
-        self.btn_upload.setStyleSheet(u"QPushButton {\n"
-"	\n"
-"	color: rgb(255, 255, 255);\n"
-"}\n"
-"QPushButton:hover {\n"
-"	\n"
-"	background-color: rgb(85, 170, 255);\n"
-"}")
-
-        self.horizontalLayout_4.addWidget(self.btn_upload)
-
         self.btn_remove = QPushButton(self.choice_frame)
         self.btn_remove.setObjectName(u"btn_remove")
-        font2 = QFont()
-        font2.setPointSize(15)
-        font2.setBold(False)
-        font2.setWeight(50)
-        self.btn_remove.setFont(font2)
+        font1 = QFont()
+        font1.setPointSize(15)
+        font1.setBold(False)
+        font1.setWeight(50)
+        self.btn_remove.setFont(font1)
         self.btn_remove.setStyleSheet(u"QPushButton {\n"
 "	\n"
 "	color: rgb(255, 255, 255);\n"
@@ -273,15 +257,15 @@ class Ui_MainWindow(object):
         self.date_label = QLabel(self.main_frame)
         self.date_label.setObjectName(u"date_label")
         self.date_label.setMaximumSize(QSize(16777215, 40))
-        font3 = QFont()
-        font3.setPointSize(10)
-        font3.setBold(True)
-        font3.setItalic(False)
-        font3.setUnderline(False)
-        font3.setWeight(75)
-        font3.setStrikeOut(False)
-        font3.setKerning(True)
-        self.date_label.setFont(font3)
+        font2 = QFont()
+        font2.setPointSize(10)
+        font2.setBold(True)
+        font2.setItalic(False)
+        font2.setUnderline(False)
+        font2.setWeight(75)
+        font2.setStrikeOut(False)
+        font2.setKerning(True)
+        self.date_label.setFont(font2)
         self.date_label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.date_label)
@@ -298,11 +282,11 @@ class Ui_MainWindow(object):
         self.amount_label = QLabel(self.main_frame)
         self.amount_label.setObjectName(u"amount_label")
         self.amount_label.setMaximumSize(QSize(16777215, 16777215))
-        font4 = QFont()
-        font4.setPointSize(10)
-        font4.setBold(True)
-        font4.setWeight(75)
-        self.amount_label.setFont(font4)
+        font3 = QFont()
+        font3.setPointSize(10)
+        font3.setBold(True)
+        font3.setWeight(75)
+        self.amount_label.setFont(font3)
         self.amount_label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.amount_label)
@@ -317,7 +301,7 @@ class Ui_MainWindow(object):
         self.category_label = QLabel(self.main_frame)
         self.category_label.setObjectName(u"category_label")
         self.category_label.setMaximumSize(QSize(16777215, 16777215))
-        self.category_label.setFont(font4)
+        self.category_label.setFont(font3)
         self.category_label.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.category_label)
@@ -329,18 +313,20 @@ class Ui_MainWindow(object):
         self.category_box.addItem("")
         self.category_box.addItem("")
         self.category_box.setObjectName(u"category_box")
-        font5 = QFont()
-        font5.setPointSize(10)
-        font5.setBold(False)
-        font5.setWeight(50)
-        self.category_box.setFont(font5)
+        font4 = QFont()
+        font4.setPointSize(10)
+        font4.setBold(False)
+        font4.setWeight(50)
+        self.category_box.setFont(font4)
         self.category_box.setStyleSheet(u"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.category_box)
 
         self.btn_save = QPushButton(self.main_frame)
         self.btn_save.setObjectName(u"btn_save")
-        self.btn_save.setFont(font1)
+        font5 = QFont()
+        font5.setPointSize(15)
+        self.btn_save.setFont(font5)
         self.btn_save.setStyleSheet(u"QPushButton {\n"
 "	\n"
 "	color: rgb(255, 255, 255);\n"
@@ -405,7 +391,6 @@ class Ui_MainWindow(object):
         self.Btn_page_1.setText("")
         self.Btn_page_2.setText("")
         self.Btn_page_3.setText("")
-        self.btn_upload.setText(QCoreApplication.translate("MainWindow", u"UPLOAD", None))
         self.btn_remove.setText(QCoreApplication.translate("MainWindow", u"REMOVE", None))
         ___qtablewidgetitem = self.expanses_table.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Date", None));
