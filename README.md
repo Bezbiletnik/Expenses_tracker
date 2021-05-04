@@ -28,10 +28,8 @@ ___
 ## Screenshots
 
 First of all you can see the main page. It consists of upload, remove and save buttons. Here you can add your expenses by categories.
-![](https://github.com/mortemab/images/blob/main/photo_2021-05-02_20-50-21.jpg?raw=true)
-For example:
-![](https://github.com/mortemab/images/blob/main/photo_2021-05-02_20-50-28.jpg?raw=true)
-The pie chart of example's expenses.
-![](https://github.com/mortemab/images/blob/main/photo_2021-05-02_20-50-32.jpg?raw=true)
+![](https://github.com/mortemab/images/blob/main/photo_2021-05-04_09-53-44.jpg?raw=true)
+The pie chart.
+![](https://github.com/mortemab/images/blob/main/photo_2021-05-04_09-53-50.jpg?raw=true)
 
 
