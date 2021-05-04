@@ -6,6 +6,10 @@
 We think that due to pandemic many households lost their income and this application will help them to monitor spendings. 
 This application will be helpful not only for business owners but for the families as well as we mention before. :blush:*
 ___
+
+## Setup
++ ```python3 -m pip install -r requirements.txt```
+___
 ## Features
 
 + Tracks all your spendings.
@@ -19,7 +23,7 @@ The program was written in **Python**.
 + [Sqlite](https://www.sqlite.org/index.html)
 + [Pandas](https://pandas.pydata.org/)
 + [Matplotlib](https://matplotlib.org/)
-+ [Pyside2](https://pypi.org/project/PySide/)
++ [Pyside2](https://www.qt.io/qt-for-python)
 ___
 ## Screenshots
 
