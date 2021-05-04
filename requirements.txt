@@ -1,0 +1,4 @@
+PySide2==5.15.2
+SQLAlchemy==1.4.12
+matplotlib==3.3.4
+pandas==1.2.4
