@@ -8,7 +8,7 @@ This application will be helpful not only for business owners but for the famili
 ___
 
 ## Setup
-+ ```python3 -m pip install -r requirements.txt```
++ ```python -m pip install -r requirements.txt```
 ___
 ## Features
 
