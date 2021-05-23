@@ -47,6 +47,8 @@ class MainWindow(QMainWindow):
         # PAGE 3
         self.ui.Btn_page_3.clicked.connect(lambda: self.ui.Pages_Widget.setCurrentWidget(self.ui.page_3))
 
+        self.setWindowIcon(QIcon(QPixmap('icons/box.svg')))
+        self.setWindowTitle('Tracker')
         self.show()
 
 
